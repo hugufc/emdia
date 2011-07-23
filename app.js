@@ -34,5 +34,5 @@ mongoose.connection.on("open", function(){
     });
 })();
 
-app.listen("3000");
+app.listen(process.env.C9_PORT, "0.0.0.0");
 console.log("funfo na calabresa");
